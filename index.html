@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sorry</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Are you still Angry?</h1>
+            <h1 class="header_text">Mene jaa na pls, sorry 😭</h1>
+        </div>
+        <div class="gif_container">
+            <div class="tenor-gif-embed" data-postid="26390994" data-share-method="host" data-aspect-ratio="1"
+                data-width="100%"><a href="https://tenor.com/view/bubu-dudu-bubu-dudu-gif-26390994">Bubu Dudu
+                    GIF</a>from <a href="https://tenor.com/search/bubu-gifs">Bubu GIFs</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onmouseover="moveButton()" onclick="moveButton()">Yes</button>
+            <button class="btn" id="noButton" onclick="nextPage()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "no.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('yesButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('yesButton').offsetHeight) - 48;
+                    document.getElementById('yesButton').style.left = `${x}px`;
+                    document.getElementById('yesButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
